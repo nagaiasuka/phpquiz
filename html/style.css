@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: blue;
+    color: white;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 20vh;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+}
+
+.top > h1,.fa-brands{
+    padding: 15px 10px;
+}
+
+header > h2{
+    text-align: center;
+    padding: 15px 10px;
+}
+
+
+
+main{
+    position: center;
+    background-color: lightblue;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.puiz_show{
+    text-align: center;
+}
+.puiz_show > ul{
+    text-align: left;
+    display: inline-block;
+}
+
+footer{
+    background-color: blue;
+    width: 1000px;
+    color: white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.puiz_show > h2{
+    padding: 15px 20px;
+}
+
+.puiz_show > ul > li{
+    /* padding: 5px 50px; */
+    padding-top: 1rem;
+}
+
+.puiz_show {
+    padding-bottom: 30px;
+}
+
+footer{
+    height: 10vh;
+}
+
+.profile{
+    text-align: right;
+    padding: 10px 30px;
+   
+}
+
+/* quiz */
+.quiz > h2{
+    padding: 10px 20px;
+}
+
+.quiz > p{
+    padding: 10px 30px;
+}
+
+.choices{
+    padding: 20px 40px;
+}
+
+ol>li{
+    padding: 10px;
+    margin: 10px;
+    border: solid;
+}
+
+ol>li:hover{
+    background-color: aquamarine;
+}
+
+ol {list-style-type: upper-latin;}
+
+.answer_box{
+    padding-top: 50px;
+    display:none;
+}
+
+.answer{
+    padding: 10px 15px;
+}
+
+.answer_text{
+    padding: 10px 20px;
+    padding-bottom: 40px;
+}
+
+
+
+
+/* ボタンデザイン */
+.buttons{
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+    padding: 80px 0;
+}
+
+
+.button01 a {
+    
+    background: #eee;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button01 a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 2rem;
+  font-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: translateY(-50%) rotate(-135deg);
+}
+.button01 a:hover {
+  background: #ff7f50;
+  color: #FFF;
+}
+.button01 a:hover:after {
+  left: 1.4rem;
+}
+
+
+.button02 a {
+    background: #eee;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
+    width: 100px;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.button02 a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 2rem;
+  font-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s;
+  width: 6px;
+  height: 6px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  transform: translateY(-50%) rotate(45deg);
+}
+.button02 a:hover {
+  background: #6bb6ff;
+  color: #FFF;
+}
+.button02 a:hover:after {
+  right: 1.4rem;
+}
+
+.contact_group{
+    height: 100％;
+  
+}
+
+.form_area{
+    border: none;
+    /* border: solid 2px #696969; */
+    border-radius: 15px;
+    width: 50vh;
+    margin: auto auto;
+    background-color: #FFFACD;
+    text-align: center;
+    
+}
+
+.content1{
+    height: 70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+input#name,input#email,textarea#message{
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid 	#696969;
+    margin: 20px 0px;
+    padding: 10px 5px;
+
+}
+input[type="submit"] {
+	width: 20%;
+    font-size: 15px;
+    color: #fff;
+	display: inline-block;
+    padding: 15px 0px;
+    text-align: center;
+	background-color: #5c87a6;
+    border: 1px solid #5c87a6;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 1s;
+    margin-bottom: 30px;
+}
+
+/*--hover--*/
+input[type="submit"]:hover {
+    color: #5c87a6;
+    background-color: #ffffff;
+    border: 1px solid #5c87a6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
